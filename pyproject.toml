@@ -1,0 +1,21 @@
+[project]
+name = "simexchange"
+version = "0.1.0"
+description = "A stock market simulation and trading bot system"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pygame==2.5.2",
+    "numpy==1.24.3",
+    "matplotlib==3.7.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[tool.uv]
+dev-dependencies = []
