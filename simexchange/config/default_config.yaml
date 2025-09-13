@@ -1,0 +1,60 @@
+# Конфигурация по умолчанию для SimExchange
+
+# Основные параметры симуляции
+simulation:
+  initial_price: 100.0
+  num_agents: 20
+  initial_balance: 10000.0
+
+# Настройки производительности
+performance:
+  max_history_size: 1000
+  max_trades_history: 5000
+  performance_mode: false
+  skip_volatility_calculation: false
+
+# Настройки увеличения баланса
+balance_increase:
+  cycles: 100
+  amount: 1000.0
+
+# Настройки спреда
+spread:
+  avg_cycles: 50
+
+# Настройки агентов
+agents:
+  risk_tolerance_range: [0.3, 0.8]
+  trading_frequency_range: [0.1, 0.4]
+  price_sensitivity_range: [0.5, 1.0]
+  trade_cooldown_range: [0.5, 2.0]
+
+# Распределение стратегий
+strategies:
+  momentum: 0.1
+  mean_reversion: 0.1
+  market_maker: 0.1
+  scalper: 0.1
+  value_investor: 0.1
+  noise_trader: 0.5
+
+# Настройки UI
+ui:
+  screen_width: 1600
+  screen_height: 1000
+  cycle_delay: 0.05
+  show_grid: true
+  chart_style: "line"  # line, candlestick, area
+
+# Цветовая схема
+colors:
+  primary: [59, 130, 246]
+  secondary: [107, 114, 128]
+  success: [34, 197, 94]
+  warning: [251, 191, 36]
+  error: [239, 68, 68]
+  info: [34, 211, 238]
+  background: [15, 23, 42]
+  surface: [30, 41, 59]
+  text_primary: [248, 250, 252]
+  text_secondary: [203, 213, 225]
